@@ -1,0 +1,6 @@
+# bla bla bla
+lecteur=titi
+ 
+# bla bla bla
+titi=toto
+...

@@ -1,0 +1,42 @@
+[SERIAL_PORT]
+serialPort = /dev/ttyS0
+baud=9600
+
+[DATABASE]
+command = database/command.csv
+address = database/address.csv
+delimiter = ;
+
+[SCRIPT]
+domoticGenerator = data_Generator_V01.py
+domoticEncrypter = data_Encrypter_V01.py
+domoticServer = domotic_Server_V01.py
+domoticSerialRx = serial_Rx_Interface_V01.py
+domoticSerialTx = serial_Tx_Interface_V01.py
+
+[ENCODE]
+START = $
+END = #
+
+[LINUX_ADDRESS]
+linuxMac =00-01
+
+[COLUMN_INFO]
+commandLineData = data
+commandLineCommand = command
+comment = comment
+
+[CONFIG]
+commandSerial = 1
+commandInterface = 2
+commandWeb = 3
+
+
+[LOG]
+logServer = log/server.log
+logRx = log/serialRx.log
+logTx = log/serialTx.log
+logGenerator = log/generator.log
+logEncrypted = log/encrypted.log
+logCommand = /var/www/command.log
+logDate = log/date.log

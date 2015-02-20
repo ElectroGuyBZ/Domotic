@@ -1,0 +1,2 @@
+trouver erreur port serie
+trouver erreur command
